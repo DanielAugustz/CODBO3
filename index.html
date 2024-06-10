@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section id="header">
+        <div id="menu">
+          <h1>CALL OF DUTY <strong> Black Ops III</strong></h1>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="banner">
+        <div id="bgcolor">
+          <div id="bannerarea">
+            <ul>
+              <li>
+                <button id="voltar" onclick="voltarimg()"><</button>
+              </li>
+              <li>
+                <h1 id="titulo">Selecione um Personagem</h1>
+                <div>
+                  <img
+                    src="Assets/Battery.jpg"
+                    id="img1"
+                    onclick="clicar1()"
+                    style="display: flex"
+                  />
+                  <img
+                    src="Assets/Outrider.jpg"
+                    id="img2"
+                    onclick="clicar2()"
+                    style="display: none"
+                  />
+                  <img
+                    src="Assets/Seraph.jpg"
+                    id="img3"
+                    onclick="clicar3()"
+                    style="display: none"
+                  />
+                  <img
+                    src="Assets/Ruin.jpg"
+                    id="img4"
+                    onclick="clicar4()"
+                    style="display: none"
+                  />
+                  <img
+                    src="Assets/Spectre.jpg"
+                    id="img5"
+                    onclick="clicar5()"
+                    style="display: none"
+                  />
+                  <img
+                    src="Assets/Reaper.jpg"
+                    id="img6"
+                    onclick="clicar6()"
+                    style="display: none"
+                  />
+
+                  <br />
+                  <p id="texto">BATTERY</p>
+                </div>
+              </li>
+
+              <li>
+                <button
+                  id="avancar"
+                  onclick="avancarimg()"
+                  style="display: flex"
+                >
+                  >
+                </button>
+              </li>
+            </ul>
+            <div id="battery">
+              <img src="Assets/Battery.jpg" />
+              <p>
+                "A única filha e caçula de cinco irmãos, Erin "Battery" Baker
+                sempre teve que lutar para conseguir o que queria. Seguindo uma
+                tradição familiar de mais de 100 anos de serviço militar, e
+                assistindo seus irmãos entrarem um a um no Exército dos Estados
+                Unidos, ela finalmente se formou no ensino médio e se matriculou
+                por conta própria. Impulsionada a se destacar por sua contínua
+                rivalidade com seus irmãos, ela se voluntariou para a Escola de
+                Paraquedismo, antes de passar no Programa de Avaliação e Seleção
+                dos Rangers. Pesadamente armada, ela opera sem medo à frente das
+                linhas de frente, atravessando agilmente ambientes urbanos,
+                enquanto destrói HVTs com salvas de munições avançadas de alto
+                explosivo."<br />
+                <br />
+                Marcas: <br />
+                Braço cibernético esquerdo e Antebraço cibernético direito<br />
+                <br />
+                Equipamento: <br />
+                Armadura Cinética (Black Ops III)
+              </p>
+              <button id="voltar1" onclick="voltar1()">X</button>
+              <button id="selecionar1">Selecionar</button>
+            </div>
+
+            <div id="outrider">
+              <img src="Assets/Outrider.jpg" />
+              <p>
+                "Como órfã nas ruas da favela da Rocinha, no Rio de Janeiro,
+                Alessandra "Outrider" Castillo sobreviveu graças ao seu olhar
+                atento e inteligência aguçada. Recebendo uma educação em uma das
+                missões internacionais da cidade, ela passava seu tempo livre
+                atravessando de telhado em telhado, observando as pessoas se
+                movendo nas ruas abaixo, percebendo padrões e aprendendo a
+                prever seus movimentos. Ao se alistar no Exército Brasileiro aos
+                18 anos, sua agilidade e habilidades de observação rapidamente
+                lhe renderam um lugar na 'Bda Op Esp', as Forças Especiais.
+                Agora, como batedora avançada, ela persegue o campo de batalha,
+                rastreando sua presa antes de destruí-la com precisão letal."<br />
+                <br />
+                Marcas: <br />
+                Casaco com capuz e luvas de arco e flecha<br />
+                <br />
+                Equipamento: <br />
+                Visão Pulso (Black Ops III)
+              </p>
+              <button id="voltar1" onclick="voltar2()">X</button>
+              <button id="selecionar2">Selecionar</button>
+            </div>
+            <div id="seraph">
+              <img src="Assets/Seraph.jpg" />
+              <p>
+                "Filha única de um temido oficial dos 54 Imortais, He Zhen-Zhen
+                foi criada nas fileiras da organização criminosa dominante da
+                Zona de Quarentena de Singapura. Ela se mostrou uma aluna
+                excelente e dedicada, aprendendo as tradições e a linhagem
+                honrada da organização enquanto perseguia o treinamento marcial
+                com uma determinação singular. Ela trabalhou duro para não
+                decepcionar seu pai ou a liderança da organização. Aos 17 anos,
+                foi elevada ao posto de Executora, uma das poucas que policiam a
+                organização internamente enquanto executam impiedosamente a
+                vontade dos 54I onde e quando for necessário."<br />
+                <br />
+                Marcas: <br />
+                Braço direito cybernetico e bandana no rosto<br />
+                <br />
+                Equipamento: <br />
+                Foco de Combate (Black Ops III)
+              </p>
+              <button id="voltar1" onclick="voltar3()">X</button>
+              <button id="selecionar3">Selecionar</button>
+            </div>
+            <div id="ruin">
+              <img src="Assets/Ruin.jpg" />
+              <p>
+                "Nascido em uma família militar e criado em um bairro difícil,
+                Donnie Walsh cresceu destemido e obstinado. Ingressando no
+                exército logo após o ensino médio, Walsh é um soldado de
+                infantaria em todos os sentidos; o campo de batalha se tornou
+                sua segunda casa. Ele é desconfiado de operações secretas e de
+                qualquer coisa que opere fora da cadeia de comando estabelecida,
+                vendo-as como desonrosas. Ele prefere uma luta justa e direta, e
+                sabe que nunca há substituto para boas botas no chão. Agora,
+                ciberneticamente aprimorado, ele usa suas habilidades únicas
+                para se lançar de cabeça na batalha, enfrentando seus inimigos
+                com pura e avassaladora força bruta!"<br />
+                <br />
+                Marcas: <br />
+                Tatuagens, Moicano<br />
+                <br />
+                Equipamento: <br />
+                Overdrive (Black Ops III)
+              </p>
+              <button id="voltar1" onclick="voltar4()">X</button>
+              <button id="selecionar4">Selecionar</button>
+            </div>
+            <div id="spectre">
+              <img src="Assets/Spectre.jpg" />
+              <p>
+                "Quase nada se sabe sobre o suposto especialista em operações
+                clandestinas, Spectre. A designação em si é um codinome acordado
+                pelas várias agências que reuniram suas inteligências sobre
+                assassinatos não resolvidos, inferindo sua existência com base
+                em evidências encontradas na cena do crime ou em relatos
+                fragmentados dados por testemunhas abaladas. Apesar das pesadas
+                redações, todos os relatos sugerem um indivíduo capaz de uma
+                furtividade extraordinária, capaz de evadir ou neutralizar os
+                mais sofisticados sistemas de segurança, sejam eles operados por
+                humanos ou automatizados. Em todos os casos, as vítimas de
+                Spectre foram 'tratadas' com ferimentos cirúrgicos precisos na
+                linha média, raramente apresentando sinais de luta."<br />
+                <br />
+                Marcas: <br />
+                Roupas e capacete futurista<br />
+                <br />
+                Equipamento: <br />
+                Camuflagem ativa (Black Ops III)
+              </p>
+              <button id="voltar1" onclick="voltar5()">X</button>
+              <button id="selecionar5">Selecionar</button>
+            </div>
+            <div id="reaper">
+              <img src="Assets/Reaper.jpg" />
+              <p>
+                "The product of a cutting-edge military R&D project to
+                supplement Special Operations soldiers in the field,
+                Experimental War Robot-115 was one of a single unit of advanced
+                prototype combat robots running the most sophisticated AI
+                software ever seen. After several politically embarrassing
+                mishaps and budget overruns, the project was cancelled and most
+                of the prototypes were stripped for parts. Fate had other plans
+                for EWR-115, when years later it was discovered to have been
+                stolen. Reports of sightings of the terrible machine on
+                battlefields around the world began to surface. No one knows why
+                it fights or who, if anyone, is issuing its orders."<br />
+                <br />
+                Marcas: <br />
+                Robo<br />
+                <br />
+                Equipamento: <br />
+                Psicose (Black Ops III)
+              </p>
+              <button id="voltar1" onclick="voltar6()">X</button>
+              <button id="selecionar6">Selecionar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footer">
+        <div id="aceita">Mim de meu ponto <strong>PF</strong></div>
+      </section>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

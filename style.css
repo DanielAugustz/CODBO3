@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 50px;
+}
+
+#menu h1 {
+  color: white;
+}
+#menu h1 strong{
+  color: rgb(255, 123, 0);
+}
+
+#banner {
+  height: calc(100vh - 100px);
+  background-color: #333;
+  background-image: url("/Assets/Infection_Map_Preview_BO3.jpg");
+  background-size: cover;
+  background-position: center; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; /
+}
+
+#bgcolor {
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+#bannerarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#bannerarea h1{
+  color: white;
+  margin-bottom: 20px;
+  font-size: 30px;
+  
+}
+#bannerarea ul {
+  display: flex;
+  list-style: none;
+  color: white;
+  align-items: center;
+
+}
+
+#bannerarea li {
+  margin: 0 10px; 
+  text-align: center;
+  font-size: 25px;
+}
+
+
+#bannerarea li img {
+  width: 750px;
+  height: 450px;
+  border: 2px solid rgb(128, 62, 0);
+  border-radius: 20px;
+  object-fit: cover; 
+}
+#bannerarea li img:hover{
+border: 2px solid rgb(250, 122, 1);
+}
+#bannerarea p{
+  margin-top: -15px;
+}
+
+
+#battery, 
+#outrider,
+#seraph,
+#ruin,
+#spectre,
+#reaper{
+ margin-right: 70px;
+ align-items: start;
+ justify-content: center;
+ background-color:rgba(0, 0, 0, 0.342);
+ border-radius: 20px;
+ display: none;
+ position: relative;
+}
+
+#battery img,
+#outrider img,
+#seraph img,
+#ruin img,
+#spectre img,
+#reaper img{
+  height: 600px;
+  width: 700px;
+  object-fit: cover;
+}
+
+#battery p,
+#outrider p,
+#seraph p,
+#ruin p,
+#spectre p,
+#reaper p{
+  margin-top: 50px;
+  text-align: start;
+  margin-left:20px;
+  color: white;
+  font-size: 25px;
+  
+}
+
+#selecionar1,
+#selecionar2,
+#selecionar3,
+#selecionar4,
+#selecionar5,
+#selecionar6{
+  position: absolute;
+  top: 100%;
+  left: 80%;
+  width: 200px;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+}
+
+#selecionar1:hover,
+#selecionar2:hover,
+#selecionar3:hover,
+#selecionar4:hover,
+#selecionar5:hover,
+#selecionar6:hover{
+  background-color:rgb(250, 122, 1);
+}
+
+
+
+#voltar1{ 
+  position: absolute;
+  top: 2%;
+  left: 98%;
+  width: 20px;
+  font-size: 30px;
+  color:white;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  border: none;
+}
+
+#voltar1:hover{
+  color:rgb(250, 122, 1);
+}
+
+
+#voltar{
+    margin: 0 20px;
+    height: 70px;
+    width: 30px;
+    font-size: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgba(255, 255, 255, 0.26);
+  }
+#avancar{
+    margin: 0 20px;
+    height: 70px;
+    width: 30px;
+    font-size: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgba(255, 255, 255, 0.26);
+  }
+
+#voltar:hover{
+  color:white;
+}
+#avancar:hover{
+    color:white;
+  }
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 50px;
+  }
+
+#aceita{
+  color: white;
+  font-size: 30px;
+}
+
+#aceita strong{
+  color:rgb(250, 122, 1);
+} 
+
+@media (min-width:360px) and (max-width:768px){
+  #bannerarea li img {
+    width: 100%;
+  }
+
+  #bannerarea h1{
+    margin-bottom: 10px;
+    font-size: 20px;
+
+  }
+  #bannerarea p{
+    margin-top: -15px;
+    font-size: 20px;
+  }
+
+  #battery, 
+  #outrider,
+  #seraph,
+  #ruin,
+  #spectre,
+  #reaper{
+    flex-direction: column;
+  }
+
+  #battery img,
+  #outrider img,
+  #seraph img,
+  #ruin img,
+  #spectre img,
+  #reaper img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #battery p,
+  #outrider p,
+  #seraph p,
+  #ruin p,
+  #spectre p,
+  #reaper p{
+    margin-top: 50px;
+    font-size: 15px;
+    
+  }
+  #selecionar1,
+  #selecionar2,
+  #selecionar3,
+  #selecionar4,
+  #selecionar5,
+  #selecionar6{
+    width: 100px;
+    top: 96%;
+    left: 70%;
+    font-size: 15px;
+  }
+  #aceita{
+    font-size: 15px;
+  }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+  #bannerarea li img {
+    width: 100%;
+  }
+  #bannerarea h1{
+    margin-bottom: 15px;
+    font-size: 20px;
+    
+  }
+  #bannerarea p{
+    margin-top: -15px;
+    font-size: 20px;
+  }
+  #battery, 
+  #outrider,
+  #seraph,
+  #ruin,
+  #spectre,
+  #reaper{
+    flex-direction: column;
+  }
+
+  #battery img,
+  #outrider img,
+  #seraph img,
+  #ruin img,
+  #spectre img,
+  #reaper img{
+    height: auto;
+    width: 100%;
+  }
+
+  #battery p,
+  #outrider p,
+  #seraph p,
+  #ruin p,
+  #spectre p,
+  #reaper p{
+    margin-top: 50px;
+    text-align: start;
+    margin-left:20px;
+    color: white;
+    font-size: 15px;
+    
+  }
+  #selecionar1,
+  #selecionar2,
+  #selecionar3,
+  #selecionar4,
+  #selecionar5,
+  #selecionar6{
+    width: 100px;
+    top: 96%;
+    left: 70%;
+    font-size: 15px;
+  }
+  #aceita{
+    font-size: 15px;
+  }
+}
+
+@media (min-width:1025px) and (max-width:1400px){
+  #bannerarea li img {
+    width: 100%;
+    height: 450px;
+    border: 2px solid rgb(128, 62, 0);
+    border-radius: 20px;
+    object-fit: cover; 
+  }
+  #bannerarea h1{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+    
+  }
+  #bannerarea p{
+    margin-top: -15px;
+    font-size: 20px;
+  }
+  
+
+  #battery img,
+  #outrider img,
+  #seraph img,
+  #ruin img,
+  #spectre img,
+  #reaper img{
+    height: auto;
+    width: 100%;
+    max-width: 650px;
+    object-fit: cover;
+  }
+
+  #battery p,
+  #outrider p,
+  #seraph p,
+  #ruin p,
+  #spectre p,
+  #reaper p{
+    width: 100%;
+    margin-top: 50px;
+    text-align: start;
+    margin-left:20px;
+    color: white;
+    font-size: 12px;
+    
+  }
+  #selecionar1,
+  #selecionar2,
+  #selecionar3,
+  #selecionar4,
+  #selecionar5,
+  #selecionar6{
+    width: 100px;
+    top: 96%;
+    left: 90%;
+    font-size: 15px;
+  }
+  #aceita{
+    color: white;
+    font-size: 15px;
+  }
+}
